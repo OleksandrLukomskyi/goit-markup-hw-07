@@ -44,7 +44,7 @@
         <address>
           <ul class="header-address">
             <li>
-              <a class="header-mail link" href="mailto:info@devstudio.com"
+              <a class="header-contakt link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
@@ -55,13 +55,23 @@
             </li>
           </ul>
         </address>
+
+        <button
+          class="header-menu-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="header-menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
     <main>
       <!-- hero image -->
       <section class="hero hero-background">
-        
         <div class="container">
           <div class="hero-bloc">
             <h1 class="hero-title">Effective Solutions for Your Business</h1>
@@ -87,62 +97,62 @@
                   <ul>
                     <li class="form-name form-field">
                       <label class="label-item" for="name"> Name</label>
-                        
-                        <div class="modal-input-group">
-                          <input class="input-name frame-focus"
-                            type="text" name="modal_name" id="name"/>
-                          <svg class="modal-icon" width="18" height="18">
-                            <use href="./images/icons.svg#icon-person"></use>
-                          </svg>
-                        </div>
-                     
+
+                      <div class="modal-input-group">
+                        <input
+                          class="input-name frame-focus"
+                          type="text"
+                          name="modal_name"
+                          id="name"
+                        />
+                        <svg class="modal-icon" width="18" height="18">
+                          <use href="./images/icons.svg#icon-person"></use>
+                        </svg>
+                      </div>
                     </li>
 
                     <li class="form-phone form-field">
                       <label class="label-item" for="form_tel">Phone</label>
-                        
-                        <div class="modal-input-group">
-                          <input
-                            class="input-tel frame-focus"
-                            type="tel"
-                            name="modal_phone" id="form_tel"
-                          />
-                          <svg class="modal-icon" width="18" height="24">
-                            <use href="./images/icons.svg#icon-phone"></use>
-                          </svg>
-                        </div>
-                      
+
+                      <div class="modal-input-group">
+                        <input
+                          class="input-tel frame-focus"
+                          type="tel"
+                          name="modal_phone"
+                          id="form_tel"
+                        />
+                        <svg class="modal-icon" width="18" height="24">
+                          <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                      </div>
                     </li>
 
                     <li class="form-field">
                       <label class="label-item" for="form_mail">Email</label>
-                        
-                        <div class="modal-input-group">
-                          <input
-                            class="input-mail frame-focus"
-                            type="email"
-                            name="modal_email" id="form_mail"
-                          />
-                          <svg class="modal-icon" width="18" height="24">
-                            <use href="./images/icons.svg#icon-email"></use>
-                          </svg>
-                        </div>
-                      
+
+                      <div class="modal-input-group">
+                        <input
+                          class="input-mail frame-focus"
+                          type="email"
+                          name="modal_email"
+                          id="form_mail"
+                        />
+                        <svg class="modal-icon" width="18" height="24">
+                          <use href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                      </div>
                     </li>
-                    </ul>
-                    <div class="textarea-bloc">
-                      
-                        <label class="textarea-label">
-                          <span class="label-item">Comment</span>
-                          <textarea
-                            class="textarea-modal-focus textarea"
-                            name="modal_comment"
-                            placeholder="Text input"
-                          ></textarea>
-                        </label>
-                    </div>
-                  
-                  
+                  </ul>
+                  <div class="textarea-bloc">
+                    <label class="textarea-label">
+                      <span class="label-item">Comment</span>
+                      <textarea
+                        class="textarea-modal-focus textarea"
+                        name="modal_comment"
+                        placeholder="Text input"
+                      ></textarea>
+                    </label>
+                  </div>
 
                   <label class="modal-checkbox-label">
                     <input
@@ -171,11 +181,11 @@
               </div>
             </div>
           </div>
-       </div>
+        </div>
       </section>
       <!-- section1 -->
       <section class="section">
-        <div class="container">
+        <div class="container features-container">
           <h2 hidden>features</h2>
 
           <ul class="flexbox-container">
@@ -239,6 +249,10 @@
               <div>
                 <img
                   class="benefits-images"
+                  srcset="
+                    ./images/section2/monitor.jpg    1x,
+                    ./images/section2/monitor@2x.jpg 2x
+                  "
                   src="./images/section2/monitor.jpg"
                   alt="computer monitor"
                   width="360"
@@ -250,6 +264,10 @@
               <div>
                 <img
                   class="benefits-images"
+                  srcset="
+                    ./images/section2/smartphone.jpg    1x,
+                    ./images/section2/smartphone@2x.jpg 2x
+                  "
                   src="./images/section2/smartphone.jpg"
                   alt="smartphone"
                   width="360"
@@ -261,6 +279,10 @@
               <div>
                 <img
                   class="benefits-images"
+                  srcset="
+                    ./images/section2/laptop.jpg    1x,
+                    ./images/section2/laptop@2x.jpg 2x
+                  "
                   src="./images/section2/laptop.jpg"
                   alt="laptop"
                   width="360"
@@ -273,11 +295,18 @@
       </section>
       <!-- <section>3 -->
       <section class="team-bloc section">
-        <div class="container">
+        <div class="container team-container">
           <h2 class="team">Our Team</h2>
           <ul class="team-flex">
             <li class="border">
-              <img src="./images/section3/mark.jpg" alt="Product Designer" />
+              <img
+                srcset="
+                  ./images/section3/mark.jpg    1x,
+                  ./images/section3/mark@2x.jpg 2x
+                "
+                src="./images/section3/mark.jpg"
+                alt="Product Designer"
+              />
 
               <div class="team-inner">
                 <h3 class="team-items">Mark Guerrero</h3>
@@ -316,7 +345,14 @@
             </li>
 
             <li class="border">
-              <img src="./images/section3/tom.jpg" alt="Frontend Developer" />
+              <img
+                srcset="
+                  ./images/section3/tom.jpg    1x,
+                  ./images/section3/tom@2x.jpg 2x
+                "
+                src="./images/section3/tom.jpg"
+                alt="Frontend Developer"
+              />
 
               <div class="team-inner">
                 <h3 class="team-items">Tom Ford</h3>
@@ -354,7 +390,14 @@
               </div>
             </li>
             <li class="border">
-              <img src="./images/section3/camila.jpg" alt="Marketing" />
+              <img
+                srcset="
+                  ./images/section3/camila.jpg    1x,
+                  ./images/section3/camila@2x.jpg 2x
+                "
+                src="./images/section3/camila.jpg"
+                alt="Marketing"
+              />
               <div class="team-inner">
                 <h3 class="team-items">Camila Garcia</h3>
                 <p class="team-description">Marketing</p>
@@ -391,7 +434,14 @@
               </div>
             </li>
             <li class="border">
-              <img src="./images/section3/daniel.jpg" alt="UI Designer" />
+              <img
+                srcset="
+                  ./images/section3/daniel.jpg    1x,
+                  ./images/section3/daniel@2x.jpg 2x
+                "
+                src="./images/section3/daniel.jpg"
+                alt="UI Designer"
+              />
               <div class="team-inner">
                 <h3 class="team-items">Daniel Wilson</h3>
                 <p class="team-description">UI Designer</p>
@@ -430,8 +480,9 @@
           </ul>
         </div>
       </section>
+      <!-- Section 4 Customers -->
       <section class="customers-section section">
-        <div class="container">
+        <div class="container container-bloc">
           <h4 class="customers-item">Customers</h4>
           <ul class="customers-bloc">
             <li class="customers-logo">
@@ -480,8 +531,9 @@
         </div>
       </section>
     </main>
+    <!-- Footer-bloc -->
     <footer class="footer">
-      <div class="container footer-bloc">
+      <div class="container footer-bloc container-bloc">
         <div class="footer-container">
           <a class="footer-logo link" href=""
             ><span class="footer-logo-blue">Web</span>Studio</a
@@ -547,29 +599,88 @@
         </div>
 
         <div class="footer-mail-bloc">
-          <p>Subscribe</p>
+          <p class="text-mail-bloc">Subscribe</p>
           <form class="footer-mail-form" name="footer_mail_form">
-            
-              <label class="footer-mail-form-lebel">
-                <input
-                  class="footer-mail-input"
-                  type="email"
-                  name="footer_mail_input"
-                  placeholder="E-mail"
-                />
-              </label>
-              
-                <button class="btn-footer-mail" type="submit">Subscribe 
-                  <svg class="footer-mail-icon" width="24" height="20">
-                  <use href="./images/icons.svg#icon-Frame"></use>
-                </svg>
-                  </button>
-               
-             
+            <label class="footer-mail-form-lebel">
+              <input
+                class="footer-mail-input"
+                type="email"
+                name="footer_mail_input"
+                placeholder="E-mail"
+              />
+            </label>
+
+            <button class="btn-footer-mail" type="submit">
+              Subscribe
+              <svg class="footer-mail-icon" width="24" height="20">
+                <use href="./images/icons.svg#icon-Frame"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
     </footer>
+    <!--todo Mobile-menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-close-btn" width="8" height="8">
+          <use href="./images/icons.svg#icon-close2"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="./index.html" class="link">Studio</a></li>
+        <li><a href="./portfolio.html" class="link">Portfolio</a></li>
+        <li><a href="" class="link color-blue">Contacts</a></li>
+      </ul>
+
+      <ul class="mobile-contacts">
+        <li>
+          <a href="tel:+110001111111" class="mabile-contacts-tel link"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li>
+          <a href="mailto:info@devstudio.com" class="mabile-contacts-mail link"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-socials">
+        <li>
+          <a href="" class="link">
+            <svg class="mobile-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="" class="link">
+            <svg class="mobile-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="" class="link">
+            <svg class="mobile-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="" class="link">
+            <svg class="mobile-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/body-scroll-lock@4.0.0-beta.0/lib/bodyScrollLock.min.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
